@@ -1,0 +1,160 @@
+import { StyleSheet } from 'react-native';
+import { COLORS } from '../../color/colors';
+
+export const styles = StyleSheet.create({
+  container: {
+    flex: 1,
+    backgroundColor: COLORS.light,
+  },
+  scrollView: {
+    flex: 1,
+    paddingHorizontal: 16,
+  },
+  header: {
+    flexDirection: 'row',
+    justifyContent: 'space-between',
+    alignItems: 'center',
+    paddingVertical: 16,
+  },
+  monthTitle: {
+    fontSize: 24,
+    fontWeight: '700',
+    color: COLORS.textLight,
+  },
+  weekdayContainer: {
+    flexDirection: 'row',
+    backgroundColor: COLORS.white,
+    borderRadius: 12,
+    overflow: 'hidden',
+    marginBottom: 12,
+    elevation: 1,
+    shadowColor: '#000',
+    shadowOffset: { width: 0, height: 1 },
+    shadowOpacity: 0.1,
+    shadowRadius: 2,
+  },
+  weekdayCell: {
+    flex: 1,
+    paddingVertical: 12,
+    justifyContent: 'center',
+    alignItems: 'center',
+  },
+  weekdayText: {
+    fontSize: 12,
+    fontWeight: '700',
+    color: COLORS.primary,
+  },
+  calendarGrid: {
+    backgroundColor: COLORS.white,
+    borderRadius: 12,
+    padding: 10,
+    marginBottom: 20,
+    elevation: 1,
+    shadowColor: '#000',
+    shadowOffset: { width: 0, height: 1 },
+    shadowOpacity: 0.1,
+    shadowRadius: 2,
+  },
+  dayCell: {
+    width: '14.28%',
+    aspectRatio: 1,
+    justifyContent: 'center',
+    alignItems: 'center',
+  },
+  dayContent: {
+    flex: 1,
+    width: '100%',
+    justifyContent: 'space-between',
+    alignItems: 'center',
+    borderRadius: 8,
+    paddingTop: 4,
+    paddingBottom: 4,
+  },
+  emptyDayContent: {
+    flex: 1,
+    width: '100%',
+  },
+  dayNumber: {
+    fontSize: 14,
+    fontWeight: '600',
+    color: COLORS.textLight,
+  },
+  todayCell: {
+    backgroundColor: COLORS.primaryLight,
+    borderRadius: 8,
+  },
+  todayText: {
+    color: COLORS.primary,
+  },
+  eventIndicators: {
+    flexDirection: 'row',
+    justifyContent: 'center',
+    gap: 2,
+    marginTop: 2,
+  },
+  eventDot: {
+    width: 4,
+    height: 4,
+    borderRadius: 2,
+  },
+  section: {
+    marginTop: 20,
+    marginBottom: 20,
+  },
+  sectionTitle: {
+    fontSize: 18,
+    fontWeight: '700',
+    color: COLORS.textLight,
+    marginBottom: 12,
+  },
+  eventCard: {
+    backgroundColor: COLORS.white,
+    borderRadius: 12,
+    paddingVertical: 12,
+    paddingHorizontal: 14,
+    marginBottom: 10,
+    flexDirection: 'row',
+    justifyContent: 'space-between',
+    alignItems: 'center',
+    elevation: 1,
+    shadowColor: '#000',
+    shadowOffset: { width: 0, height: 1 },
+    shadowOpacity: 0.1,
+    shadowRadius: 2,
+  },
+  eventCardLeft: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    flex: 1,
+  },
+  eventDateBadge: {
+    width: 44,
+    height: 44,
+    borderRadius: 10,
+    backgroundColor: COLORS.primary,
+    justifyContent: 'center',
+    alignItems: 'center',
+    marginRight: 12,
+  },
+  eventDateText: {
+    fontSize: 16,
+    fontWeight: '700',
+    color: COLORS.white,
+  },
+  eventCardContent: {
+    flex: 1,
+  },
+  eventCardTitle: {
+    fontSize: 14,
+    fontWeight: '700',
+    color: COLORS.textLight,
+  },
+  eventCardDescription: {
+    fontSize: 12,
+    color: COLORS.textMuted,
+    marginTop: 2,
+  },
+  spacer: {
+    height: 20,
+  },
+});
